@@ -1,0 +1,19 @@
+git config --global user.name "fahd"     
+git config --global user.email "fahd@fahd"
+cd /home/fahd
+git clone https://github.com/Fahd1997045/osc.git
+cd osc
+mkdir task-2
+touch greeting.txt
+echo hello world >>greeting.txt
+git init
+git add greeting.txt
+git commit -m"added greeting"
+git branch intro 
+git checkout intro  
+nano greeting.txt
+git add greeting.txt
+git commit -m"added i love git"
+git checkout origin
+git merge intro
+git tag v.1 a238fed969b99925fd876cff2c5d9fb1f614e1b9
