@@ -1,0 +1,19 @@
+sudo useradd -m newuser   
+sudo groupadd newgroup 
+ sudo usermod -aG newgroup newuser
+sudo passwd newuser  
+su newuser 
+groups
+mkdir task_dir   
+cd /home/fahd/task_dir 
+touch sample.txt  
+sudo chmod u=rw,g=r,o-r sample.txt 
+sudo chown newuser sample.txt
+sudo chgrp newgroup sample.txt
+sudo groupdel newgroup  
+sudo userdel -f newuser
+sudo apt update 
+sudo apt upgrade
+sudo apt install lolcat
+echo "i love osc" >> lolcat    
+sudo apt remove lolcat                              
