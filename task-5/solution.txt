@@ -1,0 +1,3 @@
+sort info.csv | uniq >>emails.txt
+ps -o pid,comm --sort comm >  processes.txt
+
