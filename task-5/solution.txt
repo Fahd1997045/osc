@@ -1,3 +1,2 @@
-sort info.csv | uniq >>emails.txt
-ps -o pid,comm --sort comm >  processes.txt
-
+cut -d "," -f2  info.csv | sort  | uniq >>emails.txt
+ps -eo pid,comm --sort comm > processes.txt
